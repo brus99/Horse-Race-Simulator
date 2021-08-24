@@ -142,27 +142,8 @@ class Main {
       double possibleWinnings = payoutTotal * betAmount;
 
       System.out.println("\nYour payout ratio is " + payoutTotal + "\n\n(" + today + "'s promotional bonus has been added to your payout)\n\nYou stand to win: $" + possibleWinnings + "\n\nAnd we are off to the races!\n");
-
-      Random firstMove = new Random();
-      int firstOutTheGate = firstMove.nextInt(3);
       int[] currPositions = new int[4];
-      if(firstOutTheGate == 0){
-        Betsy.setHorsePosition(1);
-        currPositions[0] = 1;
-      }
-      else if(firstOutTheGate == 1){
-        SeaBiscuit.setHorsePosition(1);
-        currPositions[1] = 1;
-      }
-      else if(firstOutTheGate == 2){
-        Arrg.setHorsePosition(1);
-        currPositions[2] = 1;
-      }
-      else{
-        Lucky.setHorsePosition(1);
-        currPositions[3] = 1;
-      }
-      
+     
       boolean aHorseHasWon = false;
       int winningHorse = 0;
       while(!aHorseHasWon){
