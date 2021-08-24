@@ -6,7 +6,6 @@ class Main {
     HashMap<String, Integer> convertHorseNameToNumber = new HashMap<String,Integer>();
     Scanner scnr = new Scanner(System.in);
     double betAmount = 0;
-    
     boolean validDay = false;
    
 
