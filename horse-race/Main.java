@@ -142,8 +142,11 @@ class Main {
       double possibleWinnings = payoutTotal * betAmount;
 
       System.out.println("\nYour payout ratio is " + payoutTotal + "\n\n(" + today + "'s promotional bonus has been added to your payout)\n\nYou stand to win: $" + possibleWinnings + "\n\nAnd we are off to the races!\n");
+
+      
       int[] currPositions = new int[4];
-     
+      
+      
       boolean aHorseHasWon = false;
       int winningHorse = 0;
       while(!aHorseHasWon){
